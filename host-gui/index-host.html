@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host GUI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="preview-area">
+            <div class="pgm"></div><!--pvw ボタン--> 
+            <div class="pvw"></div><!--pgmの枠--> 
+            <div class="pgmfake ">
+        </div>
+
+        <div class="control-panel">
+            <div class="preset-buttons" id="presetContainer"></div>
+            <div class="palette-container">
+                <input type="color" id="colorPicker">
+                <div id="colorDisplay"></div>
+            </div>
+        </div>
+    
+    </div>
+    <button id="cutButton">CUT</button>   <!--cut ボタン--> 
+    <button id="autoButton">AUTO</button> <!--Auto- ボタン--> 
+    <div class="fade-control">
+    <button id="increaseFade">🔺</button>　<!--fade ボタン--> 
+    <button id="decreaseFade">🔻</button> <!--fade ボタン--> 
+    <button id="flashButton">FLASH</button>
+    <button id="increaseBPM">🔺</button>
+    <button id="decreaseBPM">🔻</button>
+</div>
+
+<div id="fadeTimeDisplay">0.5s</div>
+<div id="bpmDisplay">80 BPM</div>
+
+<!--master dimmer ボタン--> 
+</div>
+
+    <div class="dimmer-control">
+    <label>Master Dimmer</label>
+    <input type="range" id="masterDimmer" min="0" max="1" step="0.01" value="1">
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+<!-- ログ内容リスト -->
+<div class="log-container">
+    <h3>logdeta</h3>
+    <ul id="logList"></ul> 
+</div>
+
+
+
+
+</html>
